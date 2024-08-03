@@ -65,3 +65,7 @@ cat public_key.pem
 ```
 
 Make sure to keep your private key secure and do not share it publicly.
+
+:::note
+When requesting your MMG Merchant credentials, you will be asked to provide the **Public Key**. This is the key you generated in the previous step.
+:::

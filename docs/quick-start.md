@@ -24,8 +24,8 @@ sidebar_position: 2
   - Live Client ID
   - Live Merchant ID
   - Live Secret Key
-  - Live RSA Public Key (MMG)
-  - Live RSA Private Key (Merchant)
+  - Live RSA Public Key (MMG): this is the public key MMG will provide to you.
+  - Live RSA Private Key (Merchant): this is the private key you generated.
   - Switch mode to 'Live'
   - Save the settings
 - Go to 'WooCommerce' > 'Settings' > 'Payments' to configure the checkout settings.
@@ -35,7 +35,7 @@ sidebar_position: 2
 
 :::note
 
-Make sure to keep your credentials secure and never share them publicly.
+Make sure to keep your credentials secure and never share them publicly. You should only share your **Public Key** with MMG.
 
 :::
 
