@@ -56,4 +56,4 @@ Check your API credentials and ensure your account is in good standing. If issue
 Ensure the plugin is activated and properly configured in the WordPress admin area. If it still doesn't appear, check for any conflicts with other plugins.
 
 ### Where can I get support if I have more questions?
-For additional support, please contact MMG Merchant Services or refer to our detailed documentation.
+For additional support, please contact [Kalpa Services](mailto:hello@kalpa.dev?subject=MMG%20Checkout%20Payment%20Plugin%20Support) or refer to our detailed documentation.
