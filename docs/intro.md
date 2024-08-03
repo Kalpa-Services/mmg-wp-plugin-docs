@@ -2,46 +2,66 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+MMG Checkout Payment is a WordPress plugin that enables MMG Checkout Payment flow for registered MMG Merchants to receive E-Commerce payments from MMG customers. This plugin integrates seamlessly with WooCommerce to provide a secure and efficient payment gateway for your online store.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+Get started by **[registering for an MMG Merchant Account](https://www.mmg.gy/lead-generation/)**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+
 
 ### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [WordPress 6.0 or later](https://wordpress.org/download/)
+- WooCommerce 7.0 or later
+- PHP 7.4 or later
+- mbstring extension enabled
+- RSA keys for encryption and decryption
+- SSL certificate for your website
+- [MMG Checkout API credentials](mailto:merchantservices@mmg.gy?subject=Request%20for%20MMG%20Checkout%20API%20Credentials&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20MMG%20Checkout%20API%20credentials%20for%20my%20merchant%20account.%0A%0AThank%20you.)
 
-## Generate a new site
+## Generate an RSA key pair
 
-Generate a new Docusaurus site using the **classic template**.
+You can generate an RSA key pair using OpenSSL via the command line. Here are the steps to do so:
 
-The classic template will automatically be added to your project after you run the command:
+1. **Generate the Private Key**:
+   ```sh
+   openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+   ```
 
-```bash
-npm init docusaurus@latest my-website classic
+2. **Generate the Public Key from the Private Key**:
+   ```sh
+   openssl rsa -pubout -in private_key.pem -out public_key.pem
+   ```
+
+These commands will create two files:
+
+- `private_key.pem` containing your private key.
+- `public_key.pem` containing your public key.
+
+If you open these files, you will see the keys formatted as you requested:
+
+#### Private Key (private_key.pem):
+```
+-----BEGIN PRIVATE KEY-----
+<Your Private Key Data>
+-----END PRIVATE KEY-----
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
+#### Public Key (public_key.pem):
+```
+-----BEGIN PUBLIC KEY-----
+<Your Public Key Data>
+-----END PUBLIC KEY-----
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+To view the contents of these files directly from the command line, you can use the `cat` command:
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+```sh
+cat private_key.pem
+cat public_key.pem
+```
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Make sure to keep your private key secure and do not share it publicly.
