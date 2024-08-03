@@ -18,6 +18,7 @@ sidebar_position: 2
 ## Configure the plugin
 
 - Go to 'Settings' > 'MMG Checkout' to configure the plugin.
+- Copy the Callback URL and send it to the MMG team for them to configure your store's **response and error URLs**.
 - Enter your MMG Merchant credentials:
   - Merchant Name (if different from site title)
   - Live Client ID

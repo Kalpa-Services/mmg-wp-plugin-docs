@@ -33,6 +33,10 @@ The plugin requires:
 ### How do I get API credentials?
 You need to contact MMG Merchant Services to request API credentials. You can do this by [sending an email](mailto:merchantservices@mmg.gy?subject=Request%20for%20MMG%20Checkout%20API%20Credentials).
 
+MMG will need you to provide the following information:
+- Response URL and Error URL for your store (this is the Callback URL that can be found in the [Quick Start Guide](/docs/quick-start#configure-the-plugin))
+- Your Public Key
+
 ### What is the difference between Live and Sandbox mode?
 Sandbox mode is for testing the plugin without processing real transactions. Live mode is for processing actual payments from customers.
 
