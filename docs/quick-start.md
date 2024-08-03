@@ -27,6 +27,9 @@ sidebar_position: 2
   - Live RSA Private Key (Merchant)
   - Switch mode to 'Live'
   - Save the settings
+- Go to 'WooCommerce' > 'Settings' > 'Payments' to configure the checkout settings.
+  - Enable 'MMG Checkout' as the payment gateway.
+  - Save the settings
 
 
 :::note
