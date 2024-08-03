@@ -33,14 +33,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Kalpa-Services/mmg-wp-plugin-docs',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Kalpa-Services/mmg-wp-plugin-docs',
+            'https://github.com/Kalpa-Services/mmg-wp-plugin-docs/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
