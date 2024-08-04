@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'MMG WooCommerce Payment Gateway',
-  tagline: 'Built by Guyanese for Guyanese',
+  title: 'Streamline Your Online Payments with MMG',
+  tagline: 'Effortless transactions powered by Kalpa Services Inc.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
