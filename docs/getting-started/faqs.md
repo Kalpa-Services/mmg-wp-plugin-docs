@@ -18,6 +18,9 @@ This plugin is designed for registered MMG Merchants who want to accept payments
 ### Is this plugin free?
 Yes, the plugin itself is free to download and use. However, you need to have an MMG Merchant account to process payments.
 
+### Is the plugin available in the WordPress plugin repository?
+No, not yet. It is currently awaiting review by the WordPress team.
+
 ## Setup and Configuration
 
 ### How do I install the plugin?
@@ -50,7 +53,7 @@ Yes, automated security checks are performed to ensure the plugin is secure and 
 Yes, an SSL certificate is required to ensure secure transmission of payment data from your website.
 
 ### How are customer payment details handled?
-Customer payment details are securely transmitted to MMG and are not stored on your WordPress site.
+Customers are redirected to a secure payment page hosted by MMG. Payment details are transmitted via HTTPS and are not stored on your WordPress site. See it in action [here](demo).
 
 ## Troubleshooting
 
