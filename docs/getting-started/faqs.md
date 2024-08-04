@@ -21,7 +21,7 @@ Yes, the plugin itself is free to download and use. However, you need to have an
 ## Setup and Configuration
 
 ### How do I install the plugin?
-You can install the plugin by downloading it from our GitHub repository and uploading it to your WordPress site. Detailed installation instructions are available in our [Quick Start](/docs/Getting%20Started/quick-start).
+You can install the plugin by downloading it from our GitHub repository and uploading it to your WordPress site. Detailed installation instructions are available in our [Quick Start](quick-start#install-the-plugin).
 
 ### What are the system requirements?
 The plugin requires:
@@ -35,7 +35,7 @@ The plugin requires:
 You need to contact MMG Merchant Services to request API credentials. You can do this by [sending an email](mailto:merchantservices@mmg.gy?subject=Request%20for%20MMG%20Checkout%20API%20Credentials).
 
 MMG will need you to provide the following information:
-- Response URL and Error URL for your store (this is the Callback URL that can be found in the [Quick Start](/docs/Getting%20Started/quick-start#configure-the-plugin))
+- Response URL and Error URL for your store (this is the Callback URL that can be found in the [Quick Start](quick-start#configure-the-plugin))
 - Your Public Key
 
 ### What is the difference between Live and Sandbox mode?
