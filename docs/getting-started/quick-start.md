@@ -16,52 +16,12 @@ description: Configuration Guide.
 - Click 'Install Now' to install the plugin.
 - Activate the plugin through the 'Plugins' menu in WordPress.
 
-## Generate an RSA key pair
+## Get account credentials from MMG
 
-You can generate an RSA key pair using OpenSSL via the command line. Here are the steps to do so:
-
-1. **Generate the Private Key**:
-   ```sh
-   openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
-   ```
-
-2. **Generate the Public Key from the Private Key**:
-   ```sh
-   openssl rsa -pubout -in private_key.pem -out public_key.pem
-   ```
-
-These commands will create two files:
-
-- `private_key.pem` containing your private key.
-- `public_key.pem` containing your public key.
-
-If you open these files, you will see the keys formatted as you requested:
-
-#### Private Key (private_key.pem):
-```
------BEGIN PRIVATE KEY-----
-<Your Private Key Data>
------END PRIVATE KEY-----
-```
-
-#### Public Key (public_key.pem):
-```
------BEGIN PUBLIC KEY-----
-<Your Public Key Data>
------END PUBLIC KEY-----
-```
-
-To view the contents of these files directly from the command line, you can use the `cat` command:
-
-```sh
-cat private_key.pem
-cat public_key.pem
-```
-
-Make sure to keep your private key secure and do not share it publicly.
+Email merchantservices@mmg.gy to get the necessary account credentials to use the [Checkout API](https://developer.mmg.gy/api/details/checkout_payment)
 
 :::note
-When requesting your MMG Merchant credentials, you will be asked to provide the **Public Key**. This is the key you generated in the previous step.
+Treat these keys like passwords. They are not to be shared and kept secret.
 :::
 
 ## Configure the plugin
@@ -73,8 +33,8 @@ When requesting your MMG Merchant credentials, you will be asked to provide the 
   - Live Client ID
   - Live Merchant ID
   - Live Secret Key
-  - Live RSA Public Key (MMG): this is the public key MMG will provide to you.
-  - Live RSA Private Key (Merchant): this is the private key you generated.
+  - Live RSA Public Key 
+  - Live RSA Private Key
   - Switch mode to 'Live'
   - Save the settings
 - Go to 'WooCommerce' > 'Settings' > 'Payments' to configure the checkout settings.
